@@ -43,7 +43,39 @@
            lo que resulta de utilidad en editores de texto y aplicaciones para buscar y manipular texto.
            Hay dos formas de definir una expresión regular: mediante una cadena literal y mediante el constructor de objeto RegExp.
            Una expresión regular se puede aplicar a diferentes cadenas mediante expReg. test, que devuelve true si cadena cumple expReg y false en caso contrario.</p>
-  
+    <h2>4) ¿Cómo son todas las formas de declaración de funciones en JS?.</h2>  
+       <h3>los tipos de función de JavaScript: </h3>
+       <ul>
+           <li>Function declaration.</li>
+           <ul>
+               <li><p> Declara una función con los parámetros especificados. Puede también definir funciones usando el constructor Function y el function (expresión function).</p></li>
+           </ul>
+           <li>Function expression.</li> 
+           <ul>
+               <li> <p>expresión function es muy similar y tiene casi la misma sintaxis que una function statement. La principal diferencia entre una expresión function y una sentencia function es el nombre de la función, que en expresiones function puede ser omitido para creaar funciones generadoras anónimas.</p></li>
+           </ul>
+           <li>IIFE (Immediately Invoked Function Expression)</li>
+            <ul>
+                <li><p>Es un patrón de diseño también conocido cómo función autoejecutable (Self-Executing Anonymous Function (en-US) ) y se compone por dos partes. La primera es la función anónima con alcance léxico encerrado por el Operador de Agrupación (). Esto impide accesar variables fuera del IIFE, así cómo contaminar el alcance (scope) global.</p>
+                    <p>La segunda parte crea la expresión de función cuya ejecución es inmediata (), siendo interpretado directamente en el engine de JavaScript.</p></li>
+            </ul>
+           <li>Shorthand method definition.</li>
+           <ul>
+               <li><p>A partir de ECMAScript 2015 (ES6), se introdujo una sintaxis abreviada para la definición de métodos en inicializadores de objetos. Es una forma abreviada para la asignación de una función al nombre del método.</p></li>
+           </ul>
+           <li>Arrow function.</li>
+             <ul>
+                 <li><p>La función flecha o arrow fuction es una alternativa compacta a una expresión de función tradicional, pero es limitada y no se puede utilizar en todas las situaciones. Diferencias y limitaciones: No tiene sus propios enlaces a this o super y no se debe usar como métodos. No tiene argumentos o palabras clave new.</p></li>
+             </ul>
+           <li>Generator function.</li>
+              <ul>
+                  <li><p>Los generadores son funciones de las que se puede salir y volver a entrar. Su contexto (asociación de variables) será conservado entre las reentradas. La llamada a una función generadora no ejecuta su cuerpo inmediatamente; se devuelve un objeto iterador para la función en su lugar.</p></li>
+              </ul>
+           <li>Function constructor.</li>
+           <ul>
+               <li><p>Las funciones de constructor son funciones diseñadas para construir un nuevo objeto. Dentro de una función constructora, la palabra clave this se refiere a un objeto recién creado, que se pueden asignar valores a. Las funciones del constructor "devuelven" este nuevo objeto automáticamente.</p></li>
+           </ul>
+       </ul>
 
  
 </html>
